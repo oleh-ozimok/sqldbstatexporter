@@ -17,14 +17,9 @@ import (
 db, _ := sql.Open("mysql", "user:password@/dbname")
 
 prometheus.Register(
-    sqldbstatxporter.New(db, "mysql", prometheus.Labels{
+    sqldbstatexporter.New(db, "mysql", prometheus.Labels{
         "pool_id": "main",
     }), 	
 )
-
-
-
-
-    
 
 ```
