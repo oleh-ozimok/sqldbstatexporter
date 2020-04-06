@@ -1,4 +1,4 @@
-package sqldbstatxporter
+package sqldbstatexporter
 
 import (
 	"database/sql"
